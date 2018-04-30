@@ -281,7 +281,7 @@ export class YGOProComponent implements OnInit, OnDestroy {
     }
     this.windbot = (<YGOProData>this.app.data).windbot[locale];
 
-    this.system_conf = path.join(this.app.local!.path, 'system.conf');
+    this.system_conf = path.join(this.app.local!.path, 'system_user.conf');
     await this.refresh();
 
     let modal = $('#game-list-modal');
